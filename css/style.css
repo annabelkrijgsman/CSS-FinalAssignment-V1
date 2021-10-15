@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+main .grid-container .flex-container-card {
+  text-align: center;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 350px;
+  position: relative;
+  margin: 10px auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 7px 12px -4px #666666;
+          box-shadow: 0px 7px 12px -4px #666666;
+}
+
+main .grid-container .flex-container-card:hover .overlay-card {
+  opacity: 1;
+}
+
+main .grid-container .flex-container-card .overlay-card {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  background: #6b6b6b;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .grid-container .flex-container-card .overlay-card .button-info {
+  color: #6b6b6b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  padding: 5px;
+  cursor: pointer;
+}
+
+main .grid-container .flex-container-card .card {
+  overflow: hidden;
+  -webkit-transition: 1000ms ease-in-out;
+  transition: 1000ms ease-in-out;
+}
+
+main .grid-container .flex-container-card .card .card-header {
+  text-align: center;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+main .grid-container .flex-container-card .card .card-header p {
+  color: #6b6b6b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+main .grid-container .flex-container-card .card .card-header img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+main .grid-container .flex-container-card .card .card-footer {
+  background-color: #686de0;
+  text-align: center;
+  padding: 20px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+main .grid-container .flex-container-card .card .card-footer p {
+  color: #6b6b6b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+main .grid-container .flex-container-card .card .card-footer a {
+  color: #6b6b6b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  color: #fff;
+}
+
+main .grid-container .flex-container-card .card .card-footer a:visited {
+  color: #fff;
+}
+
+main .grid-container .flex-container-card .card .card-footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+main .grid-container .flex-container-card .card .card-footer a:active {
+  color: #fff;
+}
+
+.flex-container-menu {
+  text-align: center;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 350px;
+  background-color: #c3cfe2;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  text-align: left;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.flex-container-menu .menu {
+  color: #6b6b6b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.flex-container-menu .menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.flex-container-menu .menu a:visited {
+  color: #fff;
+}
+
+.flex-container-menu .menu a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.flex-container-menu .menu a:active {
+  color: #fff;
+}
+
+.flex-container-menu .menu .menu-item {
+  padding: 10px 0;
+  display: block;
+  width: 40px;
+  height: 20px;
+  overflow: hidden;
+  -webkit-transition: 500ms width ease-in-out;
+  transition: 500ms width ease-in-out;
+}
+
+.flex-container-menu .menu .menu-item:hover {
+  width: 250px;
+}
+
+.flex-container-menu .menu .menu-item.blog {
+  background-color: #e17b77;
+}
+
+.flex-container-menu .menu .menu-item.blog .fa-laptop-code::before {
+  content: "\f5fc";
+  display: block;
+  width: 30px;
+  padding: 5px;
+  text-align: center;
+}
+
+.flex-container-menu .menu .menu-item.twitter {
+  background-color: #00aced;
+}
+
+.flex-container-menu .menu .menu-item.twitter .fa-twitter::before {
+  content: "\f099";
+  display: block;
+  width: 30px;
+  padding: 5px;
+  text-align: center;
+}
+
+.flex-container-menu .menu .menu-item.linkedin {
+  background-color: #007bb6;
+}
+
+.flex-container-menu .menu .menu-item.linkedin .fa-linkedin-in::before {
+  content: "\f0e1";
+  display: block;
+  width: 30px;
+  padding: 5px;
+  text-align: center;
+}
+
+.flex-container-menu .menu .menu-item.facebook {
+  background-color: #3b5998;
+}
+
+.flex-container-menu .menu .menu-item.facebook .fa-facebook-f::before {
+  content: "\f39e";
+  display: block;
+  width: 30px;
+  padding: 5px;
+  text-align: center;
+}
+
+.flex-container-menu .menu .menu-item.github {
+  background-color: #333;
+}
+
+.flex-container-menu .menu .menu-item.github .fa-github::before {
+  content: "\f09b";
+  display: block;
+  width: 30px;
+  padding: 5px;
+  text-align: center;
+}
+
+main {
+  background-color: #c3cfe2;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1em;
+}
+
+/* Media Queries */
+@media (min-width: 768px), (min-width: 1024px) {
+  .grid-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*# sourceMappingURL=style.css.map */

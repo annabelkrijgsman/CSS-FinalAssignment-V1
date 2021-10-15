@@ -1,0 +1,84 @@
+main .grid-container .flex-container-card {
+    @include standard-flex-container;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0px 7px 12px -4px #666666;
+
+    &:hover .overlay-card {
+        opacity: 1;
+    }
+
+    .overlay-card {
+        z-index: 1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity .5s;
+        background: $color-dark-grey;
+        border-radius: 10px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .button-info {
+            @include standard-text;
+            padding: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .card {
+        overflow: hidden;
+        transition: 1000ms ease-in-out;
+
+        .card-header {
+            text-align: $text-center;
+            padding: $standard-padding;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+            p {
+                @include standard-text;
+                margin-bottom: 10px;
+            }
+
+            img {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                border: 5px solid $color-white;
+                border-radius: 50%;
+                transform: translateX(-50px);
+            }
+        }
+
+        .card-footer {
+            background-color: $color-blue;
+            text-align: $text-center;
+            padding: $standard-padding;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            
+
+            p {
+                @include standard-text;
+                color: $color-white;
+                margin-top: 50px;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            a {
+                @include standard-text;
+                @include link-styling;
+                color: $color-white;
+            }
+        }
+    }
+}
